@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<context-param>
+		<param-name>upload folder</param-name>
+		<param-value>attachment</param-value>
+	</context-param>
+	<context-param>
+		<param-name>allowed file type</param-name>
+		<param-value>.gif,.jpg,.bmp</param-value>
+	</context-param>
+	
+	<servlet>
+		<servlet-name>FirstServlet</servlet-name>
+		<servlet-class>com.demo.servlet.FirstServlet</servlet-class>
+		<init-param>
+			<param-name>message</param-name>
+			<param-value>welcome to FirstServlet</param-value>
+		</init-param>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>RequestServlet</servlet-name>
+		<servlet-class>com.demo.servlet.RequestServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>IdentityServlet</servlet-name>
+		<servlet-class>com.demo.servlet.IdentityServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>InitParamServlet</servlet-name>
+		<servlet-class>com.demo.servlet.InitParamServlet</servlet-class>
+		<init-param>
+			<param-name>hello</param-name>
+			<param-value>password</param-value>
+		</init-param>
+		<init-param>
+			<param-name>admin</param-name>
+			<param-value>admin</param-value>
+		</init-param>
+		<init-param>
+			<param-name>babyface</param-name>
+			<param-value>babyface</param-value>
+		</init-param>
+	</servlet>
+	
+  <servlet>
+    <servlet-name>ContextParamServlet</servlet-name>
+    <servlet-class>com.demo.servlet.ContextParamServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.demo.servlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieTest</servlet-name>
+    <servlet-class>com.demo.cookie.CookieTest</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.demo.servlet.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DemoTest</servlet-name>
+    <servlet-class>com.demo.servlet.DemoTest</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieVisit</servlet-name>
+    <servlet-class>com.demo.cookie.CookieVisit</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieDelete</servlet-name>
+    <servlet-class>com.demo.cookie.CookieDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookiePage</servlet-name>
+    <servlet-class>com.demo.cookie.CookiePage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieShow</servlet-name>
+    <servlet-class>com.demo.cookie.CookieShow</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SessionDemo</servlet-name>
+    <servlet-class>com.demo.session.SessionDemo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListBookServlet</servlet-name>
+    <servlet-class>com.demo.session.ListBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BuyServlet</servlet-name>
+    <servlet-class>com.demo.session.BuyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListCartServlet</servlet-name>
+    <servlet-class>com.demo.session.ListCartServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>FirstServlet</servlet-name>
+		<url-pattern>/servlet/FirstServlet.html</url-pattern>
+		<url-pattern>/servlet/FirstServlet.jsp</url-pattern>
+		<url-pattern>/servlet/FirstServlet.php</url-pattern>
+		<url-pattern>/servlet/FirstServlet.asp</url-pattern>
+		<url-pattern>/servlet/FirstServlet.aspx</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RequestServlet</servlet-name>
+		<url-pattern>/servlet/RequestServlet.html</url-pattern>
+		<url-pattern>/servlet/RequestServlet.jsp</url-pattern>
+		<url-pattern>/servlet/RequestServlet.php</url-pattern>
+		<url-pattern>/servlet/RequestServlet.asp</url-pattern>
+		<url-pattern>/servlet/RequestServlet.aspx</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>IdentityServlet</servlet-name>
+		<url-pattern>/servlet/IdentityServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>InitParamServlet</servlet-name>
+		<url-pattern>/servlet/InitParamServlet</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContextParamServlet</servlet-name>
+    <url-pattern>/servlet/ContextParamServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/servlet/SearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieTest</servlet-name>
+    <url-pattern>/servlet/CookieTest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/servlet/DownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DemoTest</servlet-name>
+    <url-pattern>/servlet/DemoTest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieVisit</servlet-name>
+    <url-pattern>/servlet/CookieVisit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieDelete</servlet-name>
+    <url-pattern>/servlet/CookieDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookiePage</servlet-name>
+    <url-pattern>/servlet/CookiePage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieShow</servlet-name>
+    <url-pattern>/servlet/CookieShow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionDemo</servlet-name>
+    <url-pattern>/servlet/SessionDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListBookServlet</servlet-name>
+    <url-pattern>/servlet/ListBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BuyServlet</servlet-name>
+    <url-pattern>/servlet/BuyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListCartServlet</servlet-name>
+    <url-pattern>/servlet/ListCartServlet</url-pattern>
+  </servlet-mapping>
+
+
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

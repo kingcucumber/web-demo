@@ -1,0 +1,18 @@
+#Wed Oct 10 22:42:03 CST 2012
+eclipse.preferences.version=1
+encoding//WebRoot/for.jsp=UTF-8
+encoding//WebRoot/jspTest.txt=UTF-8
+encoding//WebRoot/postPersonalInformation.html=UTF-8
+encoding//WebRoot/scriptlet.jsp=UTF-8
+encoding//WebRoot/userBean.html=UTF-8
+encoding//src/com/demo/cookie/CookiePage.java=UTF-8
+encoding//src/com/demo/cookie/CookieShow.java=UTF-8
+encoding//src/com/demo/cookie/CookieVisit.java=UTF-8
+encoding//src/com/demo/servlet/ContextParamServlet.java=UTF-8
+encoding//src/com/demo/servlet/DownloadServlet.java=UTF-8
+encoding//src/com/demo/servlet/InitParamServlet.java=UTF-8
+encoding//src/com/demo/servlet/RequestServlet.java=UTF-8
+encoding//src/com/demo/servlet/SearchServlet.java=UTF-8
+encoding//src/com/demo/session/BuyServlet.java=UTF-8
+encoding//src/com/demo/session/ListBookServlet.java=UTF-8
+encoding//src/com/demo/session/ListCartServlet.java=UTF-8
