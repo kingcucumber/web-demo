@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class CookieTest extends HttpServlet {
 
+
 	/**
 	 * The doGet method of the servlet. <br>
 	 *
@@ -35,7 +36,6 @@ public class CookieTest extends HttpServlet {
 			String value = cookie[i].getValue();
 			map.put(name, value);
 		}
-		
 		
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();

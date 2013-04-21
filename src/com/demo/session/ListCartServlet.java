@@ -29,7 +29,7 @@ public class ListCartServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		HttpSession session = request.getSession(false);
-		if(!session){
+		if(session != null){
 			out.write("没有购买商品");
 			return ;
 		}
